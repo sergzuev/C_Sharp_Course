@@ -14,15 +14,12 @@ void Chet(int N)
         {
             pere = Math.Pow(i, 2);
             Console.Write($"{pere}");
-
         }
         else
         {
             pere = Math.Pow(i, 2);
             Console.Write($"{pere},");
         }
-        
-        
     }
 }
 Console.WriteLine("Введите число : ");
