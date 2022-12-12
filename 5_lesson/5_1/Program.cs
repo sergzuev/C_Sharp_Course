@@ -2,6 +2,7 @@
 // соответствующие отрицательные и наоборот.
 // [-4,-8,8,2] -> [4,8,-8,-2]
 
+
 void Print(int[] arr)
 {
     int size = arr.Length;
@@ -11,25 +12,24 @@ void Print(int[] arr)
     Console.WriteLine();
 }
 
-int[] Massiv(int size)
+int[] Mass(int size)
 {
     int[] arr = new int[size];
 
     for (int i = 0; i < size; i++)
-       arr[i] = new Random().Next(-100,100);
+       arr[i] = new Random().Next(-100, 100);
     return arr;
 }
-
-void Massiv1(int[] arr_1)
+void Massiv(int[] arr_1)
 {
     for(int i = 0; i < arr_1.Length; i++)
       arr_1[i] = - arr_1[i];
 
 }
 
-int[] arr_1 = Massiv(int.Parse(Console.ReadLine()));
+int[] arr_1 = Mass(int.Parse(Console.ReadLine()));
 Print(arr_1);
-Massiv1(arr_1);
+Massiv(arr_1);
 Print(arr_1);
 
 
