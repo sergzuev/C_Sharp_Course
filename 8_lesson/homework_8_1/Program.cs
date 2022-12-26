@@ -1,18 +1,22 @@
 ﻿// Задайте прямоугольный двумерный массив. Напишите программу,
 // которая будет находить строку с наименьшей суммой элементов.
 
-void Print(int[,] arr)
-{
-    int row_size = arr.GetLength(0);
-    int column_size = arr.GetLength(1);
 
-    for (int i = 0; i < row_size; i++)
-    {
-        for (int j = 0; j < column_size; j++)
-            Console.Write($" {arr[i, j],3} ");
-        Console.WriteLine();
-    }
-    Console.WriteLine();
+ void Chisla(int a)
+ {
+     if(a == 0) return;
+     if(a%2 == 0)
+     Chisla(a-2);
+     else
+     Chisla(a-1);
+     if(a%2 == 0)
+     Console.Write($" {a} ");
+
+ }
+
+ Console.Write("Введите число: ");
+ int n = int.Parse(Console.ReadLine());
+
 }
 
 int[,] MassNums(int row, int column, int from, int to)
